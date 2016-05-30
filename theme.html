@@ -10,50 +10,45 @@
   <title>Theming - Semantic</title>
   <link rel="stylesheet" type="text/css" href="resoures/css/sui.css">
   <link rel="stylesheet" type="text/css" href="resoures/css/custom.css">
+  <script type="text/javascript" src="resoures/js/jquery.js"></script>
+  <script type="text/javascript" src="resoures/js/velocity/velocity.js"></script>
+  <script type="text/javascript" src="resoures/js/velocity/velocity.ui.js"></script>
+  <script type="text/javascript" src="resoures/js/motion.js"></script>
 </head>
-<body>
+<body class="menu_fixed use-motion">
 
- <div class="ui borderless main menu">
-  <div class="ui container">
-   <a class="item">系统名称</a> 
-   <div class="ui simple dropdown item">
-        Dropdown <i class="dropdown icon"></i>
+ <div class="ui borderless main menu fixed">
+  <div class="ui container "> 
+     <a href="/" class="brand"  >
+      <span class="logo-line-before"><i class=""></i></span>
+        <span class="site-title">CFPA Microfinance</span>
+      <span class="logo-line-after"><i class=""  ></i></span>
+    </a> 
+   <div class="ui simple dropdown right item">
+        操作 <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="#">Link Item</a>
-          <a class="item" href="#">Link Item</a>
-          <div class="divider"></div>
-          <div class="header">Header Item</div>
+          <a class="item" href="#">登出</a>
+          <a class="item" id="toggle_control_panel" href="#">面板开关</a>  
           <div class="item">
             <i class="dropdown icon"></i>
-            Sub Menu
+            更多
             <div class="menu">
               <a class="item" href="#">Link Item</a>
               <a class="item" href="#">Link Item</a>
             </div>
-          </div>
-          <a class="item" href="#">Link Item</a>
+          </div> 
         </div>
     </div>
-    <div class="right menu">
-      <div class="item">
-        <a class="ui button">Log in</a>
-      </div> 
-    </div>
-  </div>
+   </div>
 </div>
 
  
  
-<div class="ui masthead vertical segment fixed_nav_padding">
+<div class="ui masthead vertical segment control_panel">  
     <div class="ui container">
-      <div class="introduction">
-
-        <h1 class="ui header">
-          总部金融教育抽查页面  
-        </h1>
-
+      <div class="introduction"> 
         <form class="ui form">
-          <h4 class="ui dividing header">查询条件</h4> 
+         <!--  <h4 class="ui dividing header">查询条件</h4>  -->
           <div class="fields">
             <div class="seven wide field">
               <label>记录查询</label>
@@ -94,7 +89,7 @@
     </div>
   </div>
 
-  <div class="ui main container">
+  <div class="ui main container motion_main">
      <div class="container_inner">
           <table class="ui padded celled right aligned table">
         <thead>
